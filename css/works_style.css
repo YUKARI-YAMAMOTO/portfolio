@@ -1,0 +1,168 @@
+@charset "uft-8";
+/* WORKS */
+
+body {
+    background-image: url("../images/turip_back.jpeg");
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    margin-top: 0;
+}
+.section-workslist {
+    margin-top: 50px;
+    text-align: center;
+}
+/* .workslist__group .workslist__row ul { */
+.workslist__group ul {
+    padding-top: 100px;
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 0 5%;
+    row-gap: 114px;
+}
+.workslist__item a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.workslist__item {
+    width: 30%;
+    aspect-ratio: 1/1;
+    background-color: #fffef9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+.workslist__item img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+}
+.workslist__item a:hover {
+    opacity: 0.7;
+}
+.border {
+    border: 2px solid #f8f8f8;
+}
+.btn-toworks {
+    width: 134px;
+    height: 32px;
+    background-color: #fe2e35;
+    border: 1px solid #fe2e35;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.5em;
+    color: #fff;
+    display: flex;
+    margin: 180px auto 230px;
+    position: relative;
+    display: inline-block;
+}
+.btn-toworks a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-toworks::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin-top: -5px;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    transform: rotate(225deg);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.white-toworks {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+.white-toworks::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin-top: -5px;
+    border-top: solid 2px #000;
+    border-right: solid 2px #000;
+    transform: rotate(225deg);
+    position: absolute;
+    top: 50%;
+    left: 14%;
+}
+.to-contact p {
+    font-size: 20px;
+    line-height: 1.75;
+    text-align: center;
+}
+.btn-tocontact {
+    width: 134px;
+    height: 32px;
+    background-color: #fe2e35;
+    border: 1px solid #fe2e35;
+    font-size: 14px;
+    line-height: 32px;
+    color: #fff;
+    margin: 40px auto 230px;
+    text-align: center;
+}
+.white-tocontact {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+.btn-tocontact:hover img {
+    content: url("../images/contact_mailb.png"); /* ホバー時の画像に切り替え */
+}
+.footer {
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 1130px) {
+    .workslist__group ul {
+        padding-top: 50px;
+        row-gap: 50px;
+    }
+    .workslist__item {
+        width: 38%;
+    }
+    ul {
+        justify-content: center;
+    }
+    .btn-toworks {
+        width: 160px;
+        height: 38px;
+        font-size: 16px;
+        line-height: 38px;
+        margin: 150px auto 130px;
+    }
+    .to-contact p {
+        font-size: 18px;
+        line-height: 1.75;
+        text-align: center;
+    }
+    .btn-tocontact {
+        width: 160px;
+        height: 38px;
+        font-size: 16px;
+        line-height: 38px;
+        margin-bottom: 130px;
+    }
+}
