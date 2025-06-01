@@ -40,6 +40,35 @@
             s.parentNode.insertBefore(tk, s);
         })(document);
     </script>
+    <!-- <script>
+        (function (d) {
+            var config = {
+                kitId: 'hbv2nzr',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () {
+                    h.className =
+                        h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) { }
+            }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script> -->
 </head>
 
 <body class="top-page">
@@ -538,31 +567,40 @@
             const text = document.querySelector(".loading-text");
             const main = document.getElementById("main-content");
 
-            // フェードイン
-            setTimeout(() => {
-                logo.classList.add("visible");
-            }, 3000);
+            if (!sessionStorage.getItem("visited")) {
+                // 初回アクセス時の処理
+                sessionStorage.setItem("visited", "true");
 
-            // 背景フェードアウト
-            setTimeout(() => {
-                loading.classList.add("fade-out-bg");
-            }, 6500);
+                // フェードイン
+                setTimeout(() => {
+                    logo.classList.add("visible");
+                }, 3000);
 
-            // フェードアウト
-            setTimeout(() => {
-                logo.classList.add("fade-out-logo");
-            }, 8000);
+                // 背景フェードアウト
+                setTimeout(() => {
+                    loading.classList.add("fade-out-bg");
+                }, 6500);
 
-            // テキストフェードアウト
-            setTimeout(() => {
-                text.classList.add("fade-out-text");
-            }, 9000);
+                // フェードアウト
+                setTimeout(() => {
+                    logo.classList.add("fade-out-logo");
+                }, 8000);
 
-            // 完全に非表示 & main表示
-            setTimeout(() => {
+                // テキストフェードアウト
+                setTimeout(() => {
+                    text.classList.add("fade-out-text");
+                }, 9000);
+
+                // 完全に非表示 & main表示
+                setTimeout(() => {
+                    loading.style.display = "none";
+                    main.style.display = "block";
+                }, 9000);
+            } else {
+                // 2回目以降のアクセス時の処理
                 loading.style.display = "none";
                 main.style.display = "block";
-            }, 9000);
+            }
         });
 
     </script>

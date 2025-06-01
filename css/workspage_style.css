@@ -74,9 +74,7 @@ main {
     display: flex;
     gap: 10%;
 }
-.workspage__detail img {
-    width: 100%;
-}
+
 .btn-toworkslist {
     width: 134px;
     height: 32px;
@@ -163,6 +161,9 @@ main {
         width: 100%;
         text-align: center;
     }
+    .workspage__img p {
+        padding-top: 30px;
+    }
     .workspage__text {
         padding-left: 0;
         margin-top: 50px;
@@ -172,8 +173,8 @@ main {
         flex-direction: column;
         gap: 10px;
     }
-    .workspage__img p {
-        padding-top: 30px;
+    .workspage__detail img {
+        width: 100%;
     }
     /* .toleft,
     .toright {

@@ -204,7 +204,7 @@ footer {
     display: flex;
 }
 .header__left p {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.81;
     color: #fe2e35;
 }
@@ -236,6 +236,10 @@ footer {
     width: 43px;
     height: 133px;
 }
+.menu a:hover {
+    transform: scale(0.9, 0.9);
+    display: block;
+}
 /* メニュータイトルの文字 */
 .menu p {
     font-size: 35px;
@@ -257,18 +261,18 @@ footer {
     align-content: center;
 }
 .hamburger-text p {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     position: fixed;
     top: 45px;
-    right: 11px;
+    right: 14px;
 }
 
 .hamburger-text span:nth-of-type(1),
 .hamburger-text span:nth-of-type(2) {
     display: inline-block;
     position: absolute;
-    left: 20px;
+    left: 21px;
     vertical-align: middle;
     width: 33px;
     height: 2px;
@@ -650,6 +654,10 @@ footer {
     width: 43px;
     height: 133px;
 }
+.footer-menu a:hover {
+    transform: scale(0.9, 0.9);
+    display: block;
+}
 /* メニュータイトルの文字 */
 .footer-menu p {
     font-size: 35px;
@@ -701,7 +709,7 @@ footer {
     align-content: center;
 }
 .pagetop__text p {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
 }
 .pagetop__text span {
@@ -795,7 +803,7 @@ footer {
     .logo {
         max-width: 160px;
         aspect-ratio: 160/152;
-        right: 0;
+        right: -15%;
     }
     /* header    */
     .header__inner,
