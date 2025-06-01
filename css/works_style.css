@@ -135,6 +135,7 @@ main {
     left: 0;
     width: 100%;
 }
+
 @media only screen and (max-width: 1130px) {
     .workslist__group ul {
         padding-top: 50px;
@@ -164,5 +165,12 @@ main {
         font-size: 16px;
         line-height: 38px;
         margin-bottom: 130px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .workslist__group ul {
+        padding-top: 15%;
+        gap: 0 10%;
+        row-gap: 30px;
     }
 }
