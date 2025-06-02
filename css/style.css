@@ -265,7 +265,7 @@ footer {
     color: #fff;
     position: fixed;
     top: 45px;
-    right: 13px;
+    right: 14px;
 }
 
 .hamburger-text span:nth-of-type(1),
@@ -794,10 +794,10 @@ footer {
         gap: 0;
     }
     .loading-text p {
-        font-size: 40px;
-        font-weight: 800;
+        font-size: 38px;
+        font-weight: 900;
         line-height: 1.5;
-        letter-spacing: -8px;
+        letter-spacing: -16px;
     }
 
     .logo {
@@ -811,7 +811,7 @@ footer {
         left: 20px;
     }
     .header__left {
-        top: 22px;
+        top: 10px;
     }
     .header__inner .site__name {
         display: none;
@@ -828,7 +828,7 @@ footer {
     .hamburger-text p {
         font-size: 13px;
         top: 27px;
-        right: 3px;
+        right: 2px;
     }
     .hamburger-text span:nth-of-type(1),
     .hamburger-text span:nth-of-type(2) {

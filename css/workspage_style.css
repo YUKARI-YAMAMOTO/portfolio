@@ -60,9 +60,14 @@ main {
     line-height: 1.88;
 }
 .works__type {
+    font-weight: 700;
     width: 100px;
     text-align: justify;
     text-align-last: justify;
+}
+.workspage__title p {
+    font-size: 30px;
+    font-weight: 700;
 }
 .workspage__point {
     text-align: justify;
@@ -175,6 +180,9 @@ main {
     }
     .workspage__detail img {
         width: 100%;
+    }
+    .workspage__title p {
+        font-size: 20px;
     }
     /* .toleft,
     .toright {
