@@ -32,7 +32,7 @@ footer {
 }
 /* loading */
 #loading {
-    display: flex;
+    /* display: flex; */
     /* justify-content: center;
     align-items: center; */
     background: #c10215;
@@ -48,7 +48,7 @@ footer {
     display: flex;
     align-items: center;
     position: relative;
-    top: 100px;
+    top: 360px;
     left: 15.2%;
     gap: 60px;
 }
@@ -747,7 +747,7 @@ footer {
     }
     .logo {
         position: absolute;
-        right: -33%;
+        right: 25%;
     }
     /* CONCEPT */
     .concept__group {
@@ -790,20 +790,20 @@ footer {
         display: block;
     }
     .loading-content {
-        top: -8%;
+        top: 255px;
         gap: 0;
     }
     .loading-text p {
-        font-size: 36px;
+        font-size: 40px;
         font-weight: 900;
         line-height: 1.5;
-        letter-spacing: -6px;
+        letter-spacing: -8px;
     }
 
     .logo {
         max-width: 160px;
         aspect-ratio: 160/152;
-        right: -15%;
+        right: 40%;
     }
     /* header    */
     .header__inner,
