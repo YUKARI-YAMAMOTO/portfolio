@@ -794,10 +794,11 @@ footer {
         gap: 0;
     }
     .loading-text p {
+        white-space: nowrap;
         font-size: 40px;
         font-weight: 900;
         line-height: 1.5;
-        letter-spacing: -10px;
+        letter-spacing: -8px;
     }
 
     .logo {
