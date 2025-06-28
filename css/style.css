@@ -48,7 +48,7 @@ footer {
     display: flex;
     align-items: center;
     position: relative;
-    top: 300px;
+    top: 360px;
     left: 15.2%;
     gap: 60px;
 }
@@ -797,7 +797,7 @@ footer {
         font-size: 40px;
         font-weight: 900;
         line-height: 1.5;
-        letter-spacing: -8px;
+        letter-spacing: -10px;
     }
 
     .logo {
